@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  color: white;
+  height: 100vh;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-info__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container-info__name {
+  margin-bottom: 4px;
+}
+
+.container-info__name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container-info__check {
+  position: absolute;
+  right: 0;
+  margin-right: -20px;
+  margin-top: -2px;
+  font-size: 14px;
+  color: #111;
+}
+
+.container-cards {
+  margin-top: 40px;
+}
+
+.container-card {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 684px;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease;
+}
+
+.container-card-bank {
+  cursor: pointer;
+}
+
+.container-card--expander {
+  display: none;
+}
+
+.container-card--expander-img {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+}
+
+.container-card:hover {
+  background-color: #111;
+  color: white;
+}
+
+.container-card__icon {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  font-size: 26px;
+}
+
+.container-card__icon-show-more {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.container-card__list-icon {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  font-size: 18 px;
+}
+
+.container-card__name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.info-card {
+  height: 200px;
+  margin-top: -20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  display: none;
+  padding: 10px;
+}
+
+.container-card--main:hover ~ .info-card {
+  display: block;
+}
+
+.info-card:hover {
+  background-color: #fff;
+  
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 730px) {
+  .container-card {
+    max-width: 315px;
+  }
+}
