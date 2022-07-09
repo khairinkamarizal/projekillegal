@@ -125,7 +125,7 @@ body {
 }
 @media screen and (max-width: 950px) {
   .cpc-product-shoe-img {
-    width: 165px;
+    width: 200px;
   }
 }
 
@@ -538,13 +538,10 @@ input[type=radio]:checked + label:after {
 
 
 /* 
-
 for zoom animation 
 uncomment this part if you haven't added this code anywhere else
-
 */
 /*
-
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
 	opacity: 0;
@@ -554,14 +551,12 @@ uncomment this part if you haven't added this code anywhere else
 	-o-transition: all 0.3s ease-out; 
 	transition: all 0.3s ease-out;
 }
-
 .mfp-with-zoom.mfp-ready .mfp-container {
 		opacity: 1;
 }
 .mfp-with-zoom.mfp-ready.mfp-bg {
 		opacity: 0.8;
 }
-
 .mfp-with-zoom.mfp-removing .mfp-container, 
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
@@ -584,7 +579,7 @@ uncomment this part if you haven't added this code anywhere else
 
 @media screen and (max-width: 950px) {
   .slide_viewer {
-    height: 220px;
+    height: 260px;
 	margin-bottom: 30px;
   }
 }
