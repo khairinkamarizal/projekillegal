@@ -9,13 +9,12 @@ body {
 }
 
 #changeBG {
-  background-image: url("assets/black.png");
+  background: url("assets/black.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 
 .animated {
   -webkit-animation-duration: 1.5s;
