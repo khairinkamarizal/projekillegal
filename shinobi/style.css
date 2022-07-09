@@ -10,6 +10,7 @@ body {
 
 #changeBG {
   background-image: url("assets/black.png");
+  background-size: cover;
   }
 *,
 *:before,
