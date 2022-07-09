@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SHINOBI V2 - PROJEK ILLEGAL&#174;</title>
+  <meta name="description" content="&#x201C;Mimpi jadi Realiti&#x201D; #barangillegal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="icon.svg">
+  
+</head>
+<body id="changeBG">
+<div class="cpc-viewport" data-bind="style: {display: 'block'}">
+	<div class="cpc-table-cell">
+		<div class="cpc-table-align">
+			<main role="main" class="cpc-main">
+				<div data-bind="attr: {class: data.currentShoeOption().className + ' cpc-product-imgs'}">
+					<div class="cpc-nike-tick">
+						<img src="assets/logo_white.svg">
+					</div>
+					<div class="cpc-img-wrapper">
+						<div class="slider">
+							<div class="slide_viewer">
+								<div class="slide_group">
+									<div class="slide">
+										<img class="cpc-product-shoe-img" data-bind="attr: {src: data.currentShoeOption().shoeImage}" src="#" />
+									</div>
+									<div class="slide">
+										<img class="cpc-product-shoe-img" data-bind="attr: {src: data.currentShoeOption().RRP}" src="#" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide_buttons">
+						</div>
+					</div>
+				</div>
+				<div class="cpc-product-info changeBG">
+					<article class="animated fadeInRight">
+						<section class="cpc-product-header">
+							<h1 class="cpc-product-title">SHINOBI V2</h1>
+							<div class="cpc-rating-container">
+								<div class="cpc-product-rating">
+									<span><i class="fas fa-star"></i></span>
+									<span><i class="fas fa-star"></i></span>
+									<span><i class="fas fa-star"></i></span>
+									<span><i class="fas fa-star"></i></span>
+									<span><i class="fas fa-star"></i></span>
+								</div>
+							</div>
+							<h3 class="cpc-product-color" data-bind="text: data.currentShoeOption().shoeColor"></h3>
+							<div>
+								<b><span class="cpc-product-dp" data-bind="text: data.currentShoeOption().discountPrice"></span></b>
+							</div>
+						</section>
+						<section>
+							<h2 class="cpc-product-desc">Description</h2>
+							<p class="cpc-product-desc-text">A ninja (忍者, Japanese pronunciation: [ɲiꜜɲdʑa]) or shinobi (忍び, [ɕinobi]) was a covert agent or mercenary in feudal Japan.</p>
+							<p class="cpc-product-desc-text">⚠️ Pre order will close on 15th July 2022. Get yours before it SOLD OUT!</p>
+						</section>
+						<section class="cpc-color-section">
+							<h2 class="cpc-product-color-title">Color</h2>
+							<div data-bind="foreach: data.shoeOptions">
+								<input type="radio" name="colors" data-bind="checked: $root.functions.checkedRadio(), 
+											event: {change: function(){$root.functions.colorOptionClick($index())}}, 
+											attr: {id: inputID}" />
+								<label data-bind="attr: {onclick: rating, for: inputID, class: labelClass}"></label>
+							</div>
+						</section>
+						<section class="cpc-qty-section">
+							<h2 class="cpc-product-qty-title">Size</h2>
+							<a class="cpc-link image-popup-vertical-fit" href="assets/sizechart.png">View Size Chart</a>
+						</section>
+						<section class="cpc-atc-share-section">
+							<a href="https://wasap.my/601153733210/Hi,%20Saya%20nak%20beli%20Shinobi" target=”_blank” class="cpc-atc-button">BUY NOW</a>
+							<a href="#" class="cpc-sharing" data-bind="click: function() {functions.shareShoe()}"><span class="cpc-sharing-text">Share</span></a>
+						</section>
+					</article>
+				</div>
+			</main>
+		</div>
+	</div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script  src="./script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+</body>
+</html>
